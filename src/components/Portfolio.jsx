@@ -21,9 +21,9 @@ export default function Portfolio() {
                     My Work
                 </p>
             </div>
-            <div className="w-4/5 m-auto my-5 hide-scrollbar overflow-x-scroll cursor-grab">
-                <div className="flex gap-5">
-                    {/* grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 */}
+            <div className="w-4/5 m-auto my-5 ">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+
                     <FlippableCard
                         title="Blog Post"
                         desc="Web-based application that is designed to help users manage their blog posts effectively. The application is built using React JS and Tailwind CSS"
@@ -32,7 +32,6 @@ export default function Portfolio() {
                         hash="#ReactJs &nbsp;  #Tailwind CSS  &nbsp;  #localStorage"
                         gitUrl="https://github.com/RuchitaSenjaliya001/Project-2-Post-Management"
                     />
-
 
                     <FlippableCard
                         title="HR management"
