@@ -32,22 +32,7 @@ export default function Portfolio() {
                         hash="#ReactJs &nbsp;  #Tailwind CSS  &nbsp;  #localStorage"
                         gitUrl="https://github.com/RuchitaSenjaliya001/Project-2-Post-Management"
                     />
-                    <FlippableCard
-                        title="Blog Post"
-                        desc="Web-based application that is designed to help users manage their blog posts effectively. The application is built using React JS and Tailwind CSS"
-                        image={p9}
-                        visit="https://project-2-post-management.vercel.app"
-                        hash="#ReactJs &nbsp;  #Tailwind CSS  &nbsp;  #localStorage"
-                        gitUrl="https://github.com/RuchitaSenjaliya001/Project-2-Post-Management"
-                    />
-                    <FlippableCard
-                        title="Blog Post"
-                        desc="Web-based application that is designed to help users manage their blog posts effectively. The application is built using React JS and Tailwind CSS"
-                        image={p9}
-                        visit="https://project-2-post-management.vercel.app"
-                        hash="#ReactJs &nbsp;  #Tailwind CSS  &nbsp;  #localStorage"
-                        gitUrl="https://github.com/RuchitaSenjaliya001/Project-2-Post-Management"
-                    />
+
 
                     <FlippableCard
                         title="HR management"
@@ -65,15 +50,7 @@ export default function Portfolio() {
                         hash="#NextJs &nbsp; #Tailwind CSS &nbsp;  #graphql &nbsp;  #Apollo Client"
                         gitUrl="https://github.com/RuchitaSenjaliya001/User-Diaries"
                     />
-                    <FlippableCard
-                        title="HR management"
-                        desc="Web-based application that is designed to maintain a central
-                        repository of employee information, including personal details,
-                        contact information and performance records"
-                        image={p10}
-                        hash="#NextJs &nbsp; #Tailwind CSS &nbsp; #react table &nbsp; #FullCalender"
-                        gitUrl="https://github.com/RuchitaSenjaliya001/Hr-Management"
-                    />
+
                 </div>
             </div>
         </div>
