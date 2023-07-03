@@ -12,7 +12,7 @@ export default function Sidebar() {
                     <img src={profile} alt="" className="w-44 h-44 border-8 border-gray-700 object-cover rounded-full shadow-lg" />
                     <h3 className="text-center text-xl font-semibold pt-3 ">Ruchita Senjaliya</h3>
                 </div>
-                <i className="fa fa-bars text-lg md:hidden"></i>
+
                 <ul className="hidden md:flex sm:space-x-5 lg:space-x-0 lg:flex-col lg:space-y-5 text-center cursor-pointer text-lg">
                     <li className="hover:text-[#17C097] duration-300">
                         <a href="#">Home</a>
@@ -28,7 +28,7 @@ export default function Sidebar() {
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-
+                <h3 className=" text-xl text-white font-semibold md:hidden">Ruchita Senjaliya</h3>
                 <div className="pr-6 flex space-x-6 text-lg">
                     <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><BsLinkedin className='cursor-pointer hover:text-[#17C097] duration-300' /></a>
                     <a href="https://github.com/RuchitaSenjaliya001" target="_blank" rel="noreferrer"><BsGithub className='cursor-pointer hover:text-[#17C097] duration-300' /></a>
