@@ -3,7 +3,7 @@ import "../index.css";
 
 export default function FlippableCard({ title, desc, image, hash, gitUrl, visit }) {
     return (
-        <div className="flip-card bg-white rounded-tr-[35px] rounded-bl-[35px] p-4 h-80 min-w-[320px]">
+        <div className="flip-card bg-[#e3efee] rounded-tr-[35px] rounded-bl-[35px] p-4 h-80 min-w-[320px]">
             <div className="flip-card-inner">
                 <div className="flip-card-front flex flex-col justify-between py-5">
                     <h1 className="text-3xl font-bold pb-10 text-center text-teal-700">

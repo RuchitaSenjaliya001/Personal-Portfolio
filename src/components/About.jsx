@@ -2,7 +2,7 @@ import resume from "../assets/resume.pdf";
 
 export default function About() {
     return (
-        <div className="flex flex-col justify-around lg:h-screen" id="about">
+        <div className="flex flex-col justify-around lg:h-[90vh]" id="about">
             <div className="md:relative text-center">
                 <h1 className="hidden md:block text-9xl w-full uppercase font-bold opacity-20 text-gray-400">
                     About Me
@@ -52,6 +52,7 @@ export default function About() {
                     </a>
                 </div>
             </div>
+
             {/* <div className="flex justify-around items-center flex-wrap lg:flex-nowrap text-center p-5 ">
                 <div className="px-3">
                     <h1 className="text-5xl font-semibold text-gray-500">1+</h1>

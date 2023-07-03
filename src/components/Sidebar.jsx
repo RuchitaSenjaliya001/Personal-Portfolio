@@ -20,7 +20,9 @@ export default function Sidebar() {
                     <li className="hover:text-[#17C097] duration-300">
                         <a href="#about">About Me</a>
                     </li>
-
+                    <li className="hover:text-[#17C097] duration-300">
+                        <a href="#skills">Skills</a>
+                    </li>
                     <li className="hover:text-[#17C097] duration-300">
                         <a href="#portfolio">Portfolio</a>
                     </li>
