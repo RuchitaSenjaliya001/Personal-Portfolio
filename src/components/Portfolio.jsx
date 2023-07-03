@@ -12,7 +12,7 @@ import FlippableCard from "./FlippableCard";
 
 export default function Portfolio() {
     return (
-        <div className="bg-[#343A40] pb-5" id="portfolio">
+        <div className="bg-[#343A40] py-5" id="portfolio">
             <div className="md:relative text-center">
                 <h1 className="hidden md:block text-9xl w-full uppercase font-bold opacity-20 text-gray-400">
                     Portfolio
@@ -21,7 +21,7 @@ export default function Portfolio() {
                     My Work
                 </p>
             </div>
-            <div className="w-4/5 m-auto my-5 ">
+            <div className="w-4/5 m-auto my-5 py-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
 
                     <FlippableCard

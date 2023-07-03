@@ -2,7 +2,7 @@
 import profile from '../assets/profile.jpg'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
-import { BsTwitter } from 'react-icons/bs'
+import { MdMail } from 'react-icons/md'
 
 export default function Sidebar() {
     return (
@@ -29,10 +29,10 @@ export default function Sidebar() {
                     </li>
                 </ul>
                 <h3 className=" text-xl text-white font-semibold md:hidden">Ruchita Senjaliya</h3>
-                <div className="pr-6 flex space-x-6 text-lg">
+                <div className="pr-6 flex items-center space-x-6 text-lg">
                     <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer"><BsLinkedin className='cursor-pointer hover:text-[#17C097] duration-300' /></a>
                     <a href="https://github.com/RuchitaSenjaliya001" target="_blank" rel="noreferrer"><BsGithub className='cursor-pointer hover:text-[#17C097] duration-300' /></a>
-                    <a href="https://github.com/RuchitaSenjaliya001" target="_blank" rel="noreferrer"><BsTwitter className='cursor-pointer hover:text-[#17C097] duration-300' /></a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="noreferrer"><MdMail className='cursor-pointer hover:text-[#17C097] duration-300' size={21} /></a>
                 </div>
             </div>
         </>

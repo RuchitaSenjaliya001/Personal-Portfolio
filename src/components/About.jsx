@@ -52,7 +52,7 @@ export default function About() {
                     </a>
                 </div>
             </div>
-            <div className="flex justify-around items-center flex-wrap lg:flex-nowrap text-center p-5 ">
+            {/* <div className="flex justify-around items-center flex-wrap lg:flex-nowrap text-center p-5 ">
                 <div className="px-3">
                     <h1 className="text-5xl font-semibold text-gray-500">1+</h1>
                     <p className="pt-3">Years Experience</p>
@@ -69,7 +69,7 @@ export default function About() {
                     <h1 className="text-5xl font-semibold text-gray-500">10+</h1>
                     <p className="pt-3">Get Rewards</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
