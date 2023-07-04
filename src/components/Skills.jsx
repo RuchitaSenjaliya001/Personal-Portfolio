@@ -1,3 +1,4 @@
+import SkillItem from "./SkillItem";
 
 
 export default function Skills() {
@@ -20,55 +21,13 @@ export default function Skills() {
                     <p className="text-justify">Moreover, I have a strong work ethic and excellent time management skills, allowing me to meet deadlines and deliver projects on time.</p>
                 </div>
                 <div className="md:w-[43%] pt-8">
-                    <div className="mb-4 px-5">
-                        <div className=" flex justify-between items-center">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div className="w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[90%] before:top-0 before:left-0 before:bg-teal-500"></div>
-                    </div>
-                    <div className="mb-4 px-5">
-                        <div className="flex justify-between items-center">
-                            <span>CSS</span>
-                            <span>70%</span>
-                        </div>
-                        <div className="w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[70%] before:top-0 before:left-0 before:bg-teal-500"></div>
-                    </div>
-                    <div className="mb-4 px-5">
-                        <div className="flex justify-between items-center">
-                            <span>JavaScript</span>
-                            <span>70%</span>
-                        </div>
-                        <div className="w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[70%] before:top-0 before:left-0 before:bg-teal-500"></div>
-                    </div>
-                    <div className="mb-4 px-5">
-                        <div className="flex justify-between items-center">
-                            <span>React js</span>
-                            <span>80%</span>
-                        </div>
-                        <div className="w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[80%] before:top-0 before:left-0 before:bg-teal-500"></div>
-                    </div>
-                    <div className="mb-4 px-5">
-                        <div className="flex justify-between items-center">
-                            <span>Next JS</span>
-                            <span>60%</span>
-                        </div>
-                        <div className="w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[60%] before:top-0 before:left-0 before:bg-teal-500"></div>
-                    </div>
-                    <div className="mb-4 px-5">
-                        <div className="flex justify-between items-center">
-                            <span>Tailwind CSS</span>
-                            <span>95%</span>
-                        </div>
-                        <div className="w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[95%] before:top-0 before:left-0 before:bg-teal-500"></div>
-                    </div>
-                    <div className="mb-4 px-5">
-                        <div className="flex justify-between items-center">
-                            <span>Mongo DB</span>
-                            <span>30%</span>
-                        </div>
-                        <div className="w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[30%] before:top-0 before:left-0 before:bg-teal-500"></div>
-                    </div>
+                    <SkillItem title="HTML" percentage="90" />
+                    <SkillItem title="CSS" percentage="70" />
+                    <SkillItem title="JavaScript" percentage="70" />
+                    <SkillItem title="React js" percentage="80" />
+                    <SkillItem title="Next JS" percentage="60" />
+                    <SkillItem title="Tailwind CSS" percentage="95" />
+                    <SkillItem title="Mongo DB" percentage="30" />
                 </div>
 
             </div>

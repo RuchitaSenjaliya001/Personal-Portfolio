@@ -167,7 +167,7 @@ export default function Contact() {
                             onBlur={handleBlur}
                             cols="60"
                             rows="7"
-                            placeholder="Tell us more about your needs..."
+                            placeholder="Message..."
                             className="text-lg w-full border rounded-lg border-gray-400 p-3"
                         ></textarea>
                         {errors.message && touched.message ? (

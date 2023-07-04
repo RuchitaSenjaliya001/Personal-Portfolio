@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import { BsGithub } from "react-icons/bs";
 import "../index.css";
 

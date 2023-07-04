@@ -8,7 +8,7 @@ export default function Home() {
                 <p className="text-xl">Welcome</p>
                 <h1 className="text-center text-3xl sm:text-4xl lg:text-6xl font-bold">I&apos;m Ruchita Senjaliya</h1>
                 <p className="text-xl">based in Gujarat India.</p>
-                <button className="block border-2 rounded-full px-6 py-2 duration-300 text-lg border-[#17C097] hover:bg-[#14c097]">Hire Me</button>
+                <a href="#contact"><button className="block border-2 rounded-full px-6 py-2 duration-300 text-lg border-[#17C097] hover:bg-[#14c097]">Hire Me</button></a>
             </div>
         </div>
     )
