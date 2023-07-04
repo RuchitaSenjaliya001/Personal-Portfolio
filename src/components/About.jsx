@@ -46,7 +46,7 @@ export default function About() {
                         </li>
                     </ul>
                     <a href={resume} download="Resume">
-                        <button className="block mt-6 rounded-full px-7 py-3 duration-300 text-lg bg-[#14c097] text-white hover:bg-[#11a17f]">
+                        <button className="mb-5 block mt-6 rounded-full px-7 py-3 duration-300 text-lg bg-[#14c097] text-white hover:bg-[#11a17f]">
                             Download CV
                         </button>
                     </a>

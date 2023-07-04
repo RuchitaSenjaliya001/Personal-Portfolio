@@ -11,17 +11,16 @@ export default function Skills() {
                     My Skills
                 </p>
             </div>
-            <div className="skill-content flex flex-wrap justify-between items-center px-5 py-10 text-white">
-                <div className="column left w-[42%] pl-10">
-
+            <div className=" md:flex flex-wrap justify-between items-center px-5 py-10 text-white">
+                <div className=" md:w-[42%] md:pl-10">
                     <p className="text-justify pb-3">As a React developer, I possess a unique blend of technical expertise, problem-solving skills, and a strong passion for creating intuitive user interfaces.</p>
 
                     <p className="text-justify pb-3">Throughout my journey, I have gained valuable hands-on experience in building interactive and responsive web applications.</p>
 
                     <p className="text-justify">Moreover, I have a strong work ethic and excellent time management skills, allowing me to meet deadlines and deliver projects on time.</p>
                 </div>
-                <div className="w-[43%]">
-                    <div className=" mb-4 px-5">
+                <div className="md:w-[43%] pt-8">
+                    <div className="mb-4 px-5">
                         <div className=" flex justify-between items-center">
                             <span>HTML</span>
                             <span>90%</span>
