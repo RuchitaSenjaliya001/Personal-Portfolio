@@ -81,15 +81,14 @@ export default function Contact() {
                         <h1 className="font-semibold uppercase pb-2">Address</h1>
                         <div className="">
                             <p>301, Aakruti flat</p>
-                            <p>A1-104, Palladium,</p>
-                            <p>Corporate Rd, Ahmedabad, </p>
-                            <p>Gujarat 380015</p>
+                            <p>Manas nagar</p>
+                            <p>Zanzarda Rd, Junagadh, </p>
+                            <p>Gujarat 360005</p>
                         </div>
                     </div>
                     <div>
                         <h1 className="font-semibold uppercase pb-2">Contact</h1>
                         <div>
-                            <p>+91 9510868349</p>
                             <p>+91 9510868349</p>
                         </div>
                     </div>
