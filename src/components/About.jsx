@@ -2,7 +2,7 @@ import resume from "../assets/resume.pdf";
 
 export default function About() {
     return (
-        <div className="flex flex-col justify-around py-5 h-[80vh]" id="about">
+        <div className="flex flex-col justify-around py-5" id="about">
             <div className="md:relative text-center ">
                 <h1 className="hidden md:block text-9xl w-full uppercase font-bold opacity-20 text-gray-400">
                     About Me
@@ -11,7 +11,7 @@ export default function About() {
                     Know Me More
                 </p>
             </div>
-            <div className="flex flex-col space-y-4 md:flex-row md:space-x-7 justify-between px-5 pt-10">
+            <div className="flex flex-col space-y-4 md:flex-row md:space-x-7 justify-between px-5 pt-10 pb-4">
                 <div className="md:w-[60%] space-y-6 lg:pl-6 md:px-5">
                     <h1 className="text-xl font-bold md:text-3xl">
                         I&apos;m <span className="text-[#14c097]">Ruchita Senjaliya,</span>{" "}
