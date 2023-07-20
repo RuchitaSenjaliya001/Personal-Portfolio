@@ -39,6 +39,7 @@ export default function Portfolio() {
                         repository of employee information, including personal details,
                         contact information and performance records"
                         image={p10}
+                        visit="https://hr-management-roan.vercel.app/"
                         hash="#NextJs &nbsp; #Tailwind CSS &nbsp; #react table &nbsp; #FullCalender"
                         gitUrl="https://github.com/RuchitaSenjaliya001/Hr-Management"
                     />
@@ -46,6 +47,7 @@ export default function Portfolio() {
                         title="User Diaries"
                         desc="Web-based application that is designed to fetch user information, including personal details, post created by that user, charts."
                         image={p11}
+                        visit="https://user-diaries-75r5.vercel.app/"
                         hash="#NextJs &nbsp; #Tailwind CSS &nbsp;  #graphql &nbsp;  #Apollo Client"
                         gitUrl="https://github.com/RuchitaSenjaliya001/User-Diaries"
                     />
