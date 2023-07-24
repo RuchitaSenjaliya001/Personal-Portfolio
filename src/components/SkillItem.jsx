@@ -8,7 +8,7 @@ export default function SkillItem({ title, percentage }) {
                 <span>{title}</span>
                 <span>{percentage}%</span>
             </div>
-            <div className={`w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[${percentage}%] before:top-0 before:left-0 before:bg-[#11A17F]`}></div>
+            <div className={`w-full h-[7px] bg-[#d3d3d3] relative before:absolute before:h-full before:w-[${percentage}%] before:top-0 before:left-0 before:bg-[#E59500]`}></div>
         </div>
     )
 }

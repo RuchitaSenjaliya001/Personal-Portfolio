@@ -2,12 +2,12 @@ import SkillItem from "./SkillItem";
 
 export default function Skills() {
     return (
-        <div className="bg-[#343A40] py-5" id="skills">
+        <div className="bg-[#02040F] py-5" id="skills">
             <div className="md:relative text-center">
                 <h1 className="hidden md:block text-9xl w-full uppercase font-bold opacity-20 text-gray-400">
                     Programming
                 </h1>
-                <p className="w-full md:absolute md:top-2/4 md:left-2/4 md:-translate-x-2/4 md:-translate-y-2/4 font-bold md:text-3xl text-2xl text-white py-4">
+                <p className="w-full md:absolute md:top-2/4 md:left-2/4 md:-translate-x-2/4 md:-translate-y-2/4 font-bold md:text-3xl text-2xl text-[#E59500] py-4">
                     My Skills
                 </p>
             </div>

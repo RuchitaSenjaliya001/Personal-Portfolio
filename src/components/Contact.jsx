@@ -63,14 +63,14 @@ export default function Contact() {
 
     return (
         <div
-            className="h-full bg-[#343A40] text-white flex flex-col justify-around pt-5"
+            className="h-full bg-[#02040F] text-white flex flex-col justify-around pt-5"
             id="contact"
         >
             <div className="md:relative text-center">
                 <h1 className="hidden md:block text-9xl w-full uppercase font-bold opacity-20 text-gray-400">
                     Contact me
                 </h1>
-                <p className="w-full md:absolute md:top-2/4 md:left-2/4 md:-translate-x-2/4 md:-translate-y-2/4 font-bold text-white md:text-3xl text-2xl py-4">
+                <p className="w-full md:absolute md:top-2/4 md:left-2/4 md:-translate-x-2/4 md:-translate-y-2/4 font-bold text-[#E59500] md:text-3xl text-2xl py-4">
                     Get In Touch
                 </p>
             </div>
@@ -78,7 +78,7 @@ export default function Contact() {
             <div className="md:flex  my-4 px-6">
                 <div className="pl-5 text-lg flex flex-col space-y-5 justify-around sm:flex-wrap md:flex-nowrap">
                     <div>
-                        <h1 className="font-semibold uppercase pb-2">Address</h1>
+                        <h1 className="font-semibold uppercase pb-2 text-[#E59500]">Address</h1>
                         <div className="">
                             <p>301, Aakruti flat</p>
                             <p>Manas nagar</p>
@@ -87,27 +87,27 @@ export default function Contact() {
                         </div>
                     </div>
                     <div>
-                        <h1 className="font-semibold uppercase pb-2">Contact</h1>
+                        <h1 className="font-semibold uppercase pb-2 text-[#E59500]">Contact</h1>
                         <div>
                             <p>+91 9510868349</p>
                         </div>
                     </div>
                     <div>
-                        <h1 className="font-semibold uppercase pb-2">FOLLOW ME</h1>
+                        <h1 className="font-semibold uppercase pb-2 text-[#E59500]">FOLLOW ME</h1>
                         <div className="pr-6 flex space-x-6 text-lg">
                             <a
                                 href="https://github.com/RuchitaSenjaliya001"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <BsLinkedin className="cursor-pointer hover:text-[#17C097] duration-300" />
+                                <BsLinkedin className="cursor-pointer hover:text-[#E59500] duration-300" />
                             </a>
                             <a
                                 href="https://github.com/RuchitaSenjaliya001"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <BsGithub className="cursor-pointer hover:text-[#17C097] duration-300" />
+                                <BsGithub className="cursor-pointer hover:text-[#E59500] duration-300" />
                             </a>
                             <a
                                 href="https://mail.google.com/mail/u/0/?tab=rm#inbox"
@@ -115,7 +115,7 @@ export default function Contact() {
                                 rel="noreferrer"
                             >
                                 <MdMail
-                                    className="cursor-pointer hover:text-[#17C097] duration-300"
+                                    className="cursor-pointer hover:text-[#E59500] duration-300"
                                     size={21}
                                 />
                             </a>
@@ -136,7 +136,7 @@ export default function Contact() {
                             onChange={handleChange}
                             onBlur={handleBlur}
                             placeholder="Name"
-                            className="text-lg w-full border rounded-lg border-gray-400 p-3"
+                            className="text-lg w-full text-white rounded-lg bg-[#151727] p-3"
                         />
                         {errors.user_name && touched.user_name ? (
                             <p className="text-red-500 text-sm">{errors.user_name}</p>
@@ -151,7 +151,7 @@ export default function Contact() {
                             onBlur={handleBlur}
                             id="email"
                             placeholder="Email"
-                            className="text-lg w-full border rounded-lg border-gray-400 p-3"
+                            className="text-lg w-full text-white rounded-lg bg-[#151727] p-3"
                         />
                         {errors.user_email && touched.user_email ? (
                             <p className="text-red-500 text-sm">{errors.user_email}</p>
@@ -167,7 +167,7 @@ export default function Contact() {
                             cols="60"
                             rows="7"
                             placeholder="Message..."
-                            className="text-lg w-full border rounded-lg border-gray-400 p-3"
+                            className="text-lg w-full text-white rounded-lg bg-[#151727] p-3"
                         ></textarea>
                         {errors.message && touched.message ? (
                             <p className="text-red-500 text-sm">{errors.message}</p>
@@ -176,7 +176,7 @@ export default function Contact() {
                     <div className="col-span-4 flex justify-center items-center ">
                         <button
                             disabled={!(isValid && dirty)}
-                            className="mt-6 rounded-full px-7 py-3 duration-300 text-lg bg-[#14c097] text-white hover:bg-[#11a17f] disabled:bg-[#8f8f8f] disabled:cursor-not-allowed"
+                            className="mt-6 rounded-full px-7 py-3 duration-300 text-lg bg-[#E59500] text-white hover:bg-transparent border-2 hover:text-[#E59500] border-[#E59500] disabled:bg-[#8f8f8f] disabled:text-white disabled:border-[#8f8f8f] disabled:cursor-not-allowed"
                         >
                             Send Now{" "}
                         </button>
@@ -195,10 +195,10 @@ export default function Contact() {
                     </div>
                 </form>
             </div>
-            <div className="text-center py-4 bg-[#F8F9FA] text-black">
+            <div className="text-center py-4 bg-[#0C0E1C] text-white">
                 <p className="text-lg">
                     Copyright &#169; 2023{" "}
-                    <span className="text-[#14c097] font-bold">
+                    <span className="text-[#E59500] font-bold">
                         <a href="#">Ruchita.</a>{" "}
                     </span>{" "}
                     All Rights Reserved.

@@ -5,10 +5,10 @@ import "../index.css";
 
 export default function FlippableCard({ title, desc, image, hash, gitUrl, visit }) {
     return (
-        <div className="flip-card bg-[#e3efee] rounded-tr-[35px] rounded-bl-[35px] p-4 h-80 min-w-[320px]">
+        <div className="flip-card bg-[#02040F] text-white rounded-tr-[35px] rounded-bl-[35px] p-4 h-80 min-w-[320px]">
             <div className="flip-card-inner">
                 <div className="flip-card-front flex flex-col justify-between py-5">
-                    <h1 className="text-3xl font-bold pb-10 text-center text-teal-700">
+                    <h1 className="text-3xl font-bold pb-10 text-center text-[#E59500]">
                         {title}
                     </h1>
                     <p className="px-5 text-justify">{desc}</p>
@@ -26,7 +26,7 @@ export default function FlippableCard({ title, desc, image, hash, gitUrl, visit 
                     <div className="pr-6 flex space-x-6 items-center text-lg max-w-[100px] m-auto py-2">
                         <a href={gitUrl} target="_blank" rel="noreferrer">
                             <BsGithub
-                                className="cursor-pointer hover:text-[#17C097] duration-300"
+                                className="cursor-pointer hover:text-[#E59500] duration-300"
                                 size={25}
                             />
                         </a>
@@ -35,7 +35,7 @@ export default function FlippableCard({ title, desc, image, hash, gitUrl, visit 
                             href={visit}
                             target="_blank"
                             rel="noreferrer"
-                            className="bg-[#14c097] text-white px-7 py-1.5 hover:bg-[#11a17f] duration-300 rounded-lg"
+                            className="bg-[#E59500] text-white px-7 py-1.5 hover:bg-transparent border-2 hover:text-[#E59500] border-[#E59500] duration-300 rounded-lg"
                         >
                             Visit
                         </a>
