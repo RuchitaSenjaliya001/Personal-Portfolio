@@ -1,26 +1,89 @@
+import React from "react";
+import RootLayout from "./pages/RootLayout";
+import { lazy, Suspense } from "react";
+import LoginPage from "./pages/LoginPage";
+import { loader as exploreLoader } from "./pages/HomePage";
+import Error from "./pages/Error";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
+import NewPostPage from "./pages/NewPostPage";
+import PrivateRoute from "./routes/PrivateRoute";
+import { action as newPostAction } from "./pages/NewPostPage";
 
-import Sidebar from './components/Sidebar'
-import Home from './components/Home'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
-import Skills from './components/Skills'
+const HomePage = lazy(() => import("./pages/HomePage"));
+const PostDetail = lazy(() => import("./components/Posts/PostDetail"));
+
+const userLoginData = JSON.parse(localStorage.getItem("user"));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    errorElement: <Error />,
+    element: (
+      <PrivateRoute>
+        <RootLayout
+          userLoginData={
+            userLoginData ? userLoginData : <Navigate to="/login" />
+          }
+        />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "/",
+        element: (
+          <PrivateRoute>
+            <Suspense
+              fallback={
+                <p className="text-center text-xl font-bold pt-5">Loading</p>
+              }
+            >
+              <HomePage />
+            </Suspense>
+          </PrivateRoute>
+        ),
+        loader: exploreLoader,
+      },
+
+      {
+        path: ":postId",
+        element: (
+          <PrivateRoute>
+            <Suspense
+              fallback={
+                <p className="text-center text-xl font-bold pt-5 ">
+                  Loading...
+                </p>
+              }
+            >
+              <PostDetail />
+            </Suspense>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "new-post",
+        element: (
+          <PrivateRoute>
+            <NewPostPage />
+          </PrivateRoute>
+        ),
+        action: newPostAction,
+      },
+    ],
+  },
+  { path: "login", element: <LoginPage /> },
+]);
 
 function App() {
   return (
-    <div className="flex relative">
-      <Sidebar />
-      <section className="lg:w-10/12 w-full">
-        <Home />
-        <section>
-          <About />
-          <Skills />
-          <Portfolio />
-          <Contact />
-        </section>
-      </section>
-    </div>
-  )
+    <React.Fragment>
+      <RouterProvider router={router} />
+    </React.Fragment>
+  );
 }
 
-export default App
+export default App;
